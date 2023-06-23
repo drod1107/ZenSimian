@@ -1,0 +1,53 @@
+:root {
+    /* custom color palette */
+    --primary-base: #2F4F4F;
+    --secondary-base: #556B2F;
+    --trinary-base: #36454F;
+    --primary-comp: #8F9779;
+    --secondary-comp: #8B3E35;
+    --trinary-comp: #4682B4;
+    max-width: 80vw;
+}
+
+body {
+    font-family: 'Playfair Display', 'Lato', serif;
+    background-color: var(--primary-base);
+    color: var(--primary-comp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+div {
+    /* flexbox details */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* glass morphism effect */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* border for "frosted glass" effect */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* shadow for depth */
+    /* size and spacing */
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100vw;
+    max-width: 80%;
+}
+
+@media (min-width: 768px) {
+    body {
+        /* add padding to the sides of the body on larger screens */
+        max-width: 80vw;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+}

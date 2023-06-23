@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <title>Monkey Mind Archetype Quiz - Question 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="container">
+      <!-- Your header content here -->
+      <!-- e.g., logo, navigation, etc. -->
+    </div>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <div class="container">
+    <!--This will need to become an injected element. Steps involved:  -->
+    <!--    #1: Create an array of question and answer and point value  -->
+    <!--    #2: Write a JS function to create a new html element for each and -->
+    <!--                push that to a new array  --> 
+    <!--    #3: Write a JS function to dynamically inject a new question after each -->
+    <!--                 answer is selected and submitted. This function will have to account -->
+     <!--                for initial page-load render, receive value on submit, render new question, --> 
+     <!--                push each value associated with each answer to an accumulator on submit,  -->
+     <!--               and avoid repeating questions, then fire a separate results function over  -->
+     <!--               the results page by redirecting their if  there are no remaining questions and -->
+     <!--               granting access in the store to the results view.  -->
+      <!-- Question 1 -->
+      <section id="question1">
+        <h1>Question 1</h1>
+        <p>How do you typically respond to challenges?</p>
+        <ul>
+          <li>
+            <input type="radio" id="q1-option1" name="question1" value="option1">
+            <label for="q1-option1">Analyze the situation and carefully plan a strategy (Gorilla, Orangutan)</label>
+          </li>
+          <li>
+            <input type="radio" id="q1-option2" name="question1" value="option2">
+            <label for="q1-option2">Take immediate action and adapt as needed (Chimpanzee, Squirrel Monkey)</label>
+          </li>
+          <li>
+            <input type="radio" id="q1-option3" name="question1" value="option3">
+            <label for="q1-option3">Seek advice and collaborate with others (Baboon, Capuchin)</label>
+          </li>
+          <li>
+            <input type="radio" id="q1-option4" name="question1" value="option4">
+            <label for="q1-option4">Explore different possibilities and experiment (Macaque, Tamarin)</label>
+          </li>
+          <li>
+            <input type="radio" id="q1-option5" name="question1" value="option5">
+            <label for="q1-option5">Reflect and find a balanced approach (Lemur)</label>
+          </li>
+        </ul>
+        <button id="nextQuestion">Next</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container">
+      <!-- Your footer content here -->
+      <!-- e.g., copyright information, links, etc. -->
+      copyright 2023 ZenSimian 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

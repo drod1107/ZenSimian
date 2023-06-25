@@ -7,7 +7,6 @@ function calculateResult(ansArr) {
   }
 
   let monkeyPoints = {}; // object to store points of monkeys
-  console.log("Initial monkey points object:", monkeyPoints);
 
   // loop over the ansArr to sum the points of each monkey
   ansArr.forEach(answerObj => {
@@ -20,15 +19,11 @@ function calculateResult(ansArr) {
 
       if (monkeyPoints[monkey]) {
         monkeyPoints[monkey] += points; // add points to monkey if monkey already exists in object
-        console.log(`Added ${points} points to ${monkey}. Total points: ${monkeyPoints[monkey]}`);
       } else {
         monkeyPoints[monkey] = points; // add monkey to object with points if it doesn't exist
-        console.log(`Added ${monkey} with ${points} points to monkey points object.`);
       }
     });
   });
-
-  console.log("Final monkey points object:", monkeyPoints);
 
   // find monkey with highest points
   let maxPoints = 0;
@@ -37,20 +32,16 @@ function calculateResult(ansArr) {
     if (monkeyPoints[monkey] > maxPoints) {
       maxPoints = monkeyPoints[monkey];
       maxMonkey = monkey;
-      console.log(`New max monkey is ${monkey} with ${maxPoints} points.`);
     }
   }
 
   // return the result associated with the monkey with the highest points
   let selectedMonkey = results[maxMonkey];
-  console.log("Selected monkey:", selectedMonkey);
   return selectedMonkey;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   const ansArr = JSON.parse(localStorage.getItem("ansArr")) || [];
-
-  console.log("ansArr:", ansArr);
 
   const resultSection = document.querySelector("#results");
 

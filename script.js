@@ -1,12 +1,13 @@
 import { quizQuestions, results } from "./quizQuest.js";
 
-let currentQuestion; // Add this line
+let currentQuestion;
 const ansArr = [];
+let shuffledQuestions;
 
 function renderQuestion() {
   const questionElement = document.querySelector("#quizHolder");
   if (questionElement) {
-    currentQuestion = getRandomQuestion();
+    currentQuestion = getNextQuestion();
 
     questionElement.querySelector("h1").textContent = currentQuestion.question;
 
@@ -34,14 +35,12 @@ function renderQuestion() {
   }
 }
 
-function getRandomQuestion() {
-  let randomQuestion;
+function getNextQuestion() {
+  return quizQuestions[shuffledQuestions[ansArr.length]];
+}
 
-  do {
-    randomQuestion = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
-  } while (ansArr.some(answer => answer.question === randomQuestion.question));
-
-  return randomQuestion;
+function simpleShuffle(array) {
+  return array.sort(() => Math.random() - 0.5);
 }
 
 function calculateResult(someArr) {
@@ -72,6 +71,8 @@ function calculateResult(someArr) {
 document.addEventListener("DOMContentLoaded", function () {
   const nextButton = document.querySelector("#nextQuestion");
 
+  shuffledQuestions = simpleShuffle([...Array(quizQuestions.length).keys()]); // Create and shuffle array of question indices
+
   if (nextButton) {
     nextButton.addEventListener("click", () => {
       const selectedAnswer = document.querySelector('input[name="question1"]:checked');
@@ -95,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("ansArr", JSON.stringify(ansArr));
         window.location.href = "result.html";
       } else {
-        console.log(ansArr);
         renderQuestion();
       }
     });

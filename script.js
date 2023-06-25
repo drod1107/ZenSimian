@@ -1,20 +1,20 @@
 import { quizQuestions, results } from "./quizQuest.js";
 
+let currentQuestion; // Add this line
 const ansArr = [];
 
 function renderQuestion() {
   const questionElement = document.querySelector("#quizHolder");
- console.log(questionElement)
   if (questionElement) {
-    const randomQuestion = getRandomQuestion();
+    currentQuestion = getRandomQuestion();
 
-    questionElement.querySelector("h1").textContent = randomQuestion.question;
+    questionElement.querySelector("h1").textContent = currentQuestion.question;
 
     const answerList = questionElement.querySelector("ul");
     if (answerList) {
       answerList.innerHTML = "";
 
-      randomQuestion.answers.forEach((answer, index) => {
+      currentQuestion.answers.forEach((answer, index) => {
         const li = document.createElement("li");
         const input = document.createElement("input");
         input.type = "radio";
@@ -48,9 +48,9 @@ function calculateResult(someArr) {
   const monkeyPoints = {};
 
   for (const answer of someArr) {
-    const { animals, points } = answer.answer;
-    if (animals) {
-      for (const monkey of animals) {
+    const { monkeys, points } = answer.answer;
+    if (monkeys) {
+      for (const monkey of monkeys) {
         monkeyPoints[monkey] = (monkeyPoints[monkey] || 0) + points;
       }
     }
@@ -81,16 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      const selectedQuestion = getRandomQuestion();
-      const selectedAnswerObj = selectedQuestion.answers.find(answer => answer.text === selectedAnswer.nextElementSibling.textContent);
+      const selectedAnswerObj = currentQuestion.answers.find(answer => answer.text === selectedAnswer.nextElementSibling.textContent);
 
-      ansArr.push({ question: selectedQuestion.question, answer: selectedAnswerObj });
+      ansArr.push({ 
+        question: currentQuestion.question, 
+        answer: selectedAnswerObj.text, 
+        monkeys: selectedAnswerObj.monkeys, 
+        points: selectedAnswerObj.points 
+      });
 
       if (ansArr.length === 10) {
         alert("You have answered all the questions. Click OK to view the result.");
         localStorage.setItem("ansArr", JSON.stringify(ansArr));
         window.location.href = "result.html";
       } else {
+        console.log(ansArr);
         renderQuestion();
       }
     });

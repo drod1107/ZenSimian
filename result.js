@@ -1,5 +1,19 @@
 import { results } from "./quizQuest.js";
 
+function shareToFacebook() {
+    // Replace 'YOUR_URL' with the URL you want to share
+    var urlToShare = 'https://zensimian.com';
+
+    // Escape special characters in the URL
+    urlToShare = encodeURIComponent(urlToShare);
+
+    // The Facebook Share dialog URL
+    var facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + urlToShare;
+
+    // Open a new window with the Facebook Share dialog
+    window.open(facebookShareUrl, 'Share Dialog', 'width=626,height=436');
+}
+
 function calculateResult(ansArr) {
   if (!ansArr.length) {
     console.log("Answer array is empty.");
@@ -42,7 +56,6 @@ function calculateResult(ansArr) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const ansArr = JSON.parse(localStorage.getItem("ansArr")) || [];
-
   const resultSection = document.querySelector("#results");
 
   if (Array.isArray(ansArr) && ansArr.length === 10 && resultSection) {
@@ -54,10 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
       let resultHtml = `
         <h2>${text}</h2>
         <p>${description}</p>
+        <button onclick="shareToFacebook()">Share on Facebook</button>
       `;
 
       if (imageUrl && imageUrl.trim() !== "") {
-        resultHtml += `<img src="${imageUrl}" alt="${text}" />`;
+        resultHtml += `<img src="${imageUrl}" alt="${text}" />`
+        resultHtml += `<button onclick="shareToFacebook()">Share on Facebook</button>`;;
       }
 
       resultSection.innerHTML = resultHtml;
@@ -68,6 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("No valid ansArr found.");
   }
 
-// Clear the stored ansArr to prevent it from interfering with future quizzes
+  // Clear the stored ansArr to prevent it from interfering with future quizzes
   localStorage.removeItem("ansArr");
 });

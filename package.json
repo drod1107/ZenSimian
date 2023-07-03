@@ -4,9 +4,12 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "serve":"npx live-server .",
+    "serve": "npx live-server .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.15.0"
+  }
 }

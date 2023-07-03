@@ -71,8 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
 
       if (imageUrl && imageUrl.trim() !== "") {
-        resultHtml += `<img src="${imageUrl}" alt="${text}" />`
-        resultHtml += `<button onclick="shareToFacebook()">Share on Facebook</button>`;;
+        resultHtml += `<img src="${imageUrl}" alt="${text}" />`;
       }
 
       resultSection.innerHTML = resultHtml;

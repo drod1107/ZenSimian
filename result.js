@@ -1,19 +1,5 @@
 import { results } from "./quizQuest.js";
 
-function shareToFacebook() {
-    // Replace 'YOUR_URL' with the URL you want to share
-    var urlToShare = 'https://zensimian.com';
-
-    // Escape special characters in the URL
-    urlToShare = encodeURIComponent(urlToShare);
-
-    // The Facebook Share dialog URL
-    var facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + urlToShare;
-
-    // Open a new window with the Facebook Share dialog
-    window.open(facebookShareUrl, 'Share Dialog', 'width=626,height=436');
-}
-
 function calculateResult(ansArr) {
   if (!ansArr.length) {
     console.log("Answer array is empty.");
@@ -50,13 +36,14 @@ function calculateResult(ansArr) {
       maxMonkeys.push(monkey); // if current monkey's points are equal to maxPoints, add it to maxMonkeys array
     }
   }
-
+  
   // Select a random monkey from maxMonkeys
   let randomIndex = Math.floor(Math.random() * maxMonkeys.length);
   let selectedMonkeyKey = maxMonkeys[randomIndex];
 
   // return the result associated with the randomly selected monkey with the highest points
   let selectedMonkey = results[selectedMonkeyKey];
+  
   return selectedMonkey;
 }
 
@@ -68,19 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedMonkey = calculateResult(ansArr);
 
     if (selectedMonkey !== null) {
-      const { text, description, imageUrl } = selectedMonkey;
+      // Make sure selectedMonkey is not undefined before destructuring it
+      if (typeof selectedMonkey !== "undefined") {
+        const { text, description, imageUrl } = selectedMonkey;
 
-      let resultHtml = `
-        <h2>${text}</h2>
-        <p>${description}</p>
-        <button onclick="shareToFacebook()">Share on Facebook</button>
-      `;
+        let resultHtml = `
+          <h2>${text}</h2>
+          <p>${description}</p>
+          <button onclick="shareToFacebook()">Share on Facebook</button>
+        `;
 
-      if (imageUrl && imageUrl.trim() !== "") {
-        resultHtml += `<img src="${imageUrl}" alt="${text}" />`;
+        if (imageUrl && imageUrl.trim() !== "") {
+          resultHtml += `<img src="${imageUrl}" alt="${text}" />`;
+        }
+
+        resultSection.innerHTML = resultHtml;
+      } else {
+        console.log("No result associated with the selected monkey.");
       }
-
-      resultSection.innerHTML = resultHtml;
     } else {
       resultSection.innerHTML = "<p>No result found.</p>";
     }

@@ -39,18 +39,24 @@ function calculateResult(ansArr) {
     });
   });
 
-  // find monkey with highest points
+  // find monkey(s) with highest points
   let maxPoints = 0;
-  let maxMonkey = null;
+  let maxMonkeys = [];
   for (let monkey in monkeyPoints) {
     if (monkeyPoints[monkey] > maxPoints) {
       maxPoints = monkeyPoints[monkey];
-      maxMonkey = monkey;
+      maxMonkeys = [monkey]; // create a new array for this maximum point value
+    } else if (monkeyPoints[monkey] === maxPoints) {
+      maxMonkeys.push(monkey); // if current monkey's points are equal to maxPoints, add it to maxMonkeys array
     }
   }
 
-  // return the result associated with the monkey with the highest points
-  let selectedMonkey = results[maxMonkey];
+  // Select a random monkey from maxMonkeys
+  let randomIndex = Math.floor(Math.random() * maxMonkeys.length);
+  let selectedMonkeyKey = maxMonkeys[randomIndex];
+
+  // return the result associated with the randomly selected monkey with the highest points
+  let selectedMonkey = results[selectedMonkeyKey];
   return selectedMonkey;
 }
 

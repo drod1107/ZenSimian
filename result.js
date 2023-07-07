@@ -47,6 +47,9 @@ function calculateResult(ansArr) {
   return selectedMonkey;
 }
 
+// The rest of the code remains unchanged...
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const ansArr = JSON.parse(localStorage.getItem("ansArr")) || [];
   const resultSection = document.querySelector("#results");
@@ -83,3 +86,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Clear the stored ansArr to prevent it from interfering with future quizzes
   localStorage.removeItem("ansArr");
 });
+

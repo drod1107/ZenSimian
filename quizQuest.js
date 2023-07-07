@@ -304,4 +304,3 @@ const results = {
 };
 
 export { quizQuestions, results };
-

@@ -1,7 +1,7 @@
 {
   "name": "zen-simian",
   "version": "1.0.0",
-  "description": "",
+  "description": "Source code for ZenSimian personality assessment quiz",
   "main": "script.js",
   "scripts": {
     "serve": "npx live-server .",

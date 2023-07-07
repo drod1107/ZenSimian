@@ -1,9 +1,5 @@
 import { results } from "./quizQuest.js";
 
-console.log(results); // Log the results object
-
-// The rest of the code remains unchanged...
-
 function calculateResult(ansArr) {
   if (!ansArr.length) {
     console.log("Answer array is empty.");
@@ -40,8 +36,6 @@ function calculateResult(ansArr) {
       maxMonkeys.push(monkey); // if current monkey's points are equal to maxPoints, add it to maxMonkeys array
     }
   }
-
-  console.log(maxMonkeys); // Log the maxMonkeys array
   
   // Select a random monkey from maxMonkeys
   let randomIndex = Math.floor(Math.random() * maxMonkeys.length);
@@ -50,8 +44,6 @@ function calculateResult(ansArr) {
   // return the result associated with the randomly selected monkey with the highest points
   let selectedMonkey = results[selectedMonkeyKey];
   
-  console.log(selectedMonkey); // Log the selectedMonkey
-
   return selectedMonkey;
 }
 

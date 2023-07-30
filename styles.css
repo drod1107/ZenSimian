@@ -100,3 +100,11 @@ header, main, footer {
 .centered {
   text-align: center;
 }
+
+.button {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-color:
+  blue; text-align: center;
+}

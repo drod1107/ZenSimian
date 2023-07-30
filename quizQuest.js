@@ -281,7 +281,7 @@ const results = {
   "text": "Squirrel Monkey Archetype",
   "description":
     "The Squirrel Monkey Archetype is energetic and playful. They are social butterflies who enjoy being in the company of others. However, under stress, they can become impulsive and overly influenced by their social environment. This archetype needs to remember to balance their sociability with personal boundaries and to not let their energy lead to impulsiveness.",
-  "imageUrl": "assets/images/orangutanFinalBW.png"
+  "imageUrl": "assets/images/squirrelMonkeyFinalBW.png"
 },
 "marmoset": {
   "text": "Marmoset Archetype",

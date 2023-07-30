@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <meta property="og:url" content="https://zensimian.netlify.app"/>
+  <meta property="og:title" content="ZenSimian - The Archetypal Monkey Mind Quiz"/>
+  <meta property="og:image" content="https://zensimian.netlify.app/assets/images/mandrillFinalBW.png"/>
+  <meta name="description" content="Unleash your potential with ZenSimian's Monkey Mind Archetype Quiz! Meet your archetypal mind - unlock hidden strengths and embark on your transformative journey towards self-discovery and personal growth today!">
+
+
   <title>Monkey Mind Archetype Quiz - Results</title>
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- connects to FB Dev SDK to enable "Share to Facebook" button function -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="CgGImh2Y"></script>
   <!-- Header section -->
   <header>
     <div class="container">
@@ -25,10 +37,7 @@
       <section id="results">
         <h1>Results</h1>
         <div class="result-container">
-          <img src="assets\images\orangutanBW1 (2).png" alt="Monkey Image">
-          <div class="summary">
-            <h2>Chimpanzee Archetype</h2>
-            <p>The Chimpanzee Archetype is intelligent and assertive, often taking the lead in social situations. They are excellent problem solvers and communicators, making them effective in team settings. However, under stress, they can become territorial and competitive. It's important for this archetype to remember to balance their assertiveness with cooperation and to use their intelligence to navigate social dynamics effectively.</p>
+            <!-- results will inject here -->
           </div>
         </div>
         <button id="signUp">Sign Up for Coaching</button>

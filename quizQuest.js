@@ -253,54 +253,54 @@ const quizQuestions = [
 
 
 const results = {
-  "chimpanzee": {
-    "text": "Chimpanzee Archetype",
-    "description":
-      "The Chimpanzee Archetype is intelligent and assertive, often taking the lead in social situations. They are excellent problem solvers and communicators, making them effective in team settings. However, under stress, they can become territorial and competitive. It's important for this archetype to remember to balance their assertiveness with cooperation and to use their intelligence to navigate social dynamics effectively.",
-    "imageUrl": "assets/images/chimpanzeeFinalBW.png"
-  },
-  "gorilla": {
-    "text": "Gorilla Archetype",
-    "description":
-      "The Gorilla Archetype is known for their strength and gentle nature. They are peaceful beings who prefer to avoid conflict, often taking on the role of the peacemaker in their social circles. However, when resources are scarce or their loved ones are threatened, they can become defensive. This archetype needs to remember to harness their strength in a constructive manner and to not let their protective nature lead to unnecessary confrontations.",
-    "imageUrl": "assets/images/gorillaFinalBW.png"
-  },
-  "orangutan": {
-    "text": "Orangutan Archetype",
-    "description":
-      "The Orangutan Archetype is independent and observant. They are comfortable spending time alone and are often introspective, preferring to think deeply about things. However, in times of scarcity or threat, they can become overly cautious and self-reliant. This archetype needs to remember the value of social connections and to not let their independence turn into isolation.",
-    "imageUrl": "assets/images/orangutanFinalBW.png"
-  },
-  "mandrill": {
-    "text": "Mandrill Archetype",
-    "description":
-      "The Mandrill Archetype is expressive and confident. They are socially engaged and often the life of the party. However, they can become assertive and vigilant when resources are scarce or their status is threatened. This archetype needs to remember to use their expressive communication for positive influence and not let their sensitivity to social status lead to unnecessary conflicts.",
-    "imageUrl": "assets/images/mandrillFinalBW.png"
-  },
-  "squirrel monkey": {
-    "text": "Squirrel Monkey Archetype",
-    "description":
-      "The Squirrel Monkey Archetype is energetic and playful. They are social butterflies who enjoy being in the company of others. However, under stress, they can become impulsive and overly influenced by their social environment. This archetype needs to remember to balance their sociability with personal boundaries and to not let their energy lead to impulsiveness.",
-    "imageUrl": "assets/images/orangutanFinalBW.png"
-  },
-  "marmoset": {
-    "text": "Marmoset Archetype",
-    "description":
-      "The Marmoset Archetype is cooperative and adaptive. They work well in teams and are often the glue that holds groups together. However, under stress, they can become overly protective and defensive. This archetype needs to remember to balance their cooperative nature with self-care and to not let their protective instincts lead to unnecessary stress.",
-    "imageUrl": "assets/images/marmosetFinalBW.png"
-  },
-  "capuchin": {
-    "text": "Capuchin Archetype",
-    "description":
-      "The Capuchin Archetype is resourceful and curious. They thrive in situations where creativity and problem-solving are needed. However, under stress, they can become possessive and territorial. This archetype needs to remember to use their resourcefulness in a positive way and to not let their curiosity lead to possessiveness.",
-    "imageUrl": "assets/images/capuchinFinalBW.png"
-  },
-  "lemur": {
-    "text": "Lemur Archetype",
-    "description":
-      "The Lemur Archetype is social and relaxed. They enjoy being part of a group and often bring a sense of calm to their social circles. However, under stress, they can become impulsive and overly influenced by their social environment. This archetype needs to remember to balance their sociability with personal boundaries and to not let their relaxed nature lead to impulsiveness.",
-    "imageUrl": "assets/images/lemurFinalBW.png"
-  }
+"chimpanzee": {
+  "text": "Chimpanzee Archetype",
+  "description":
+    "The Chimpanzee Archetype is intelligent and assertive, often taking the lead in social situations. They are excellent problem solvers and communicators, making them effective in team settings. However, under stress, they can become territorial and competitive. It's important for this archetype to remember to balance their assertiveness with cooperation and to use their intelligence to navigate social dynamics effectively.",
+  "imageUrl": "assets/images/chimpanzeeFinalBW.png"
+},
+"gorilla": {
+  "text": "Gorilla Archetype",
+  "description":
+    "The Gorilla Archetype is known for their strength and gentle nature. They are peaceful beings who prefer to avoid conflict, often taking on the role of the peacemaker in their social circles. However, when resources are scarce or their loved ones are threatened, they can become defensive. This archetype needs to remember to harness their strength in a constructive manner and to not let their protective nature lead to unnecessary confrontations.",
+  "imageUrl": "assets/images/gorillaFinalBW.png"
+},
+"orangutan": {
+  "text": "Orangutan Archetype",
+  "description":
+    "The Orangutan Archetype is independent and observant. They are comfortable spending time alone and are often introspective, preferring to think deeply about things. However, in times of scarcity or threat, they can become overly cautious and self-reliant. This archetype needs to remember the value of social connections and to not let their independence turn into isolation.",
+  "imageUrl": "assets/images/orangutanFinalBW.png"
+},
+"mandrill": {
+  "text": "Mandrill Archetype",
+  "description":
+    "The Mandrill Archetype is expressive and confident. They are socially engaged and often the life of the party. However, they can become assertive and vigilant when resources are scarce or their status is threatened. This archetype needs to remember to use their expressive communication for positive influence and not let their sensitivity to social status lead to unnecessary conflicts.",
+  "imageUrl": "assets/images/mandrillFinalBW.png"
+},
+"squirrel monkey": {
+  "text": "Squirrel Monkey Archetype",
+  "description":
+    "The Squirrel Monkey Archetype is energetic and playful. They are social butterflies who enjoy being in the company of others. However, under stress, they can become impulsive and overly influenced by their social environment. This archetype needs to remember to balance their sociability with personal boundaries and to not let their energy lead to impulsiveness.",
+  "imageUrl": "assets/images/squirrelMonkeyFinalBW.png"
+},
+"marmoset": {
+  "text": "Marmoset Archetype",
+  "description":
+    "The Marmoset Archetype is cooperative and adaptive. They work well in teams and are often the glue that holds groups together. However, under stress, they can become overly protective and defensive. This archetype needs to remember to balance their cooperative nature with self-care and to not let their protective instincts lead to unnecessary stress.",
+  "imageUrl": "assets/images/marmosetFinalBW.png"
+},
+"capuchin": {
+  "text": "Capuchin Archetype",
+  "description":
+    "The Capuchin Archetype is resourceful and curious. They thrive in situations where creativity and problem-solving are needed. However, under stress, they can become possessive and territorial. This archetype needs to remember to use their resourcefulness in a positive way and to not let their curiosity lead to possessiveness.",
+  "imageUrl": "assets/images/capuchinFinalBW.png"
+},
+"lemur": {
+  "text": "Lemur Archetype",
+  "description":
+    "The Lemur Archetype is social and relaxed. They enjoy being part of a group and often bring a sense of calm to their social circles. However, under stress, they can become impulsive and overly influenced by their social environment. This archetype needs to remember to balance their sociability with personal boundaries and to not let their relaxed nature lead to impulsiveness.",
+  "imageUrl": "assets/images/lemurFinalBW.png"
+}
 };
 
 export { quizQuestions, results };

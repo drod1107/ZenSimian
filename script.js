@@ -3,6 +3,7 @@ import { quizQuestions, results } from "./quizQuest.js";
 let currentQuestion;
 const ansArr = [];
 let shuffledQuestions;
+let servedQuestions = new Set();
 
 function renderQuestion() {
   const questionElement = document.querySelector("#quizHolder");
@@ -36,7 +37,21 @@ function renderQuestion() {
 }
 
 function getNextQuestion() {
-  return quizQuestions[shuffledQuestions[ansArr.length]];
+  let nextQuestionIndex;
+  if (ansArr.length < quizQuestions.length) {
+    // Get the next unanswered question
+    do {
+      nextQuestionIndex = shuffledQuestions[ansArr.length];
+    } while (servedQuestions.has(nextQuestionIndex));
+  } else {
+    // All questions answered, get the question that was already served
+    do {
+      nextQuestionIndex = shuffledQuestions[Math.floor(Math.random() * quizQuestions.length)];
+    } while (!servedQuestions.has(nextQuestionIndex));
+  }
+  
+  servedQuestions.add(nextQuestionIndex);
+  return quizQuestions[nextQuestionIndex];
 }
 
 function simpleShuffle(array) {
@@ -96,12 +111,31 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("ansArr", JSON.stringify(ansArr));
         window.location.href = "result.html";
       } else {
-        renderQuestion();
+        if (ansArr.length === quizQuestions.length && checkForTie()) {
+          // Handle tie-breaking logic and re-render question
+          renderTieBreakerQuestion();
+        } else {
+          renderQuestion();
+        }
       }
     });
   }
 
   renderQuestion();
 });
+
+function checkForTie() {
+  // Check if there is a tie in the current answers
+  const pointsArr = ansArr.map(answer => answer.points);
+  return new Set(pointsArr).size === 1;
+}
+
+function renderTieBreakerQuestion() {
+  // If there's a tie, render a previously served question to break the tie
+  const servedQuestionsArray = Array.from(servedQuestions);
+  const tieBreakerQuestionIndex = servedQuestionsArray[Math.floor(Math.random() * servedQuestionsArray.length)];
+  currentQuestion = quizQuestions[tieBreakerQuestionIndex];
+  renderQuestion();
+}
 
 export { ansArr };

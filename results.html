@@ -3,50 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  
   <meta property="og:url" content="https://zensimian.netlify.app"/>
   <meta property="og:title" content="ZenSimian - The Archetypal Monkey Mind Quiz"/>
   <meta property="og:image" content="https://zensimian.netlify.app/assets/images/mandrillFinalBW.png"/>
   <meta name="description" content="Unleash your potential with ZenSimian's Monkey Mind Archetype Quiz! Meet your archetypal mind - unlock hidden strengths and embark on your transformative journey towards self-discovery and personal growth today!">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 
-  <title>Monkey Mind Archetype Quiz - Question 1</title>
+  <title>Monkey Mind Archetype Quiz - Results</title>
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- connects to FB Dev SDK to enable "Share to Facebook" button function -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="CgGImh2Y"></script>
   <!-- Header section -->
   <header>
-    <div class="container glassDiv">
-      <!-- Header content here -->
-     <h1> ZenSimian - Who is your Archetype?</h1>
+    <div class="container">
+      <!-- Your header content here -->
       <!-- e.g., logo, navigation, etc. -->
     </div>
   </header>
 
   <!-- Main content section -->
   <main>
-    <div class="container glassDiv">
-      <!-- Question 1 -->
-      <div id="quizHolder">
-        <h1 class="question-text"></h1>
-        <ul class="answer-list"></ul>
-        <button id="nextQuestion">Next</button>
-      </div>
+    <div class="container">
+      <!-- Results -->
+      <section id="results">
+        <h1>Results</h1>
+        <div class="result-container">
+            <!-- results will inject here -->
+          </div>
+        </div>
+        <button id="signUp">Sign Up for Coaching</button>
+      </section>
     </div>
   </main>
 
   <!-- Footer section -->
   <footer>
     <div class="container">
-      <!-- Footer content here -->
+      <!-- Your footer content here -->
       <!-- e.g., copyright information, links, etc. -->
       copyright 2023 ZenSimian 
     </div>
   </footer>
 
-  <script src="script.js" type="module"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+

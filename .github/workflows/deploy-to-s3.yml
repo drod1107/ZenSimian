@@ -1,11 +1,11 @@
 name: Deploy to S3
 
 on:
-    pull_request:
-        branches:
-        - main
-        types:
-        - closed
+  pull_request:
+    branches:
+    - main
+    types:
+    - closed
 
 jobs:
   deploy:
@@ -21,7 +21,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v3
       with:
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-        aws-region: us-east-1  
+        aws-region: us-east-1
 
     - name: Deploy to S3
       run: |

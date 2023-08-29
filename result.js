@@ -51,6 +51,10 @@ function calculateResult(ansArr) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  // add an eventListener to handle the "button" click for signup redirect
+  document.getElementById('signUp').onclick = function() {
+    window.location.href = "/earlyAccess.html";
+  };
   const ansArr = JSON.parse(localStorage.getItem("ansArr")) || [];
   const resultSection = document.querySelector("#results");
 
@@ -65,7 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let resultHtml = `
           <h2>${text}</h2>
           <p>${description}</p>
-          <button onclick="shareToFacebook()">Share on Facebook</button>
+          <div class="button" id="fbShare">
+            <a href="https://www.facebook.com/dialog/share?app_id=252033714306810display=popup&href=https%3A%2F%2Fzensimian.netlify.app&redirect_uri=https%3A%2F%2Fzensimian.netlify.app%2Findex.html"target="_blank">
+              Share on Facebook
+            </a>
+          </div>
+
+
         `;
 
         if (imageUrl && imageUrl.trim() !== "") {

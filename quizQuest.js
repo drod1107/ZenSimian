@@ -1,254 +1,254 @@
 const quizQuestions = [
+    {
+      "question": "How do you typically respond to challenges?",
+      "answers": [
+        {
+          "text": "Analyze the situation and carefully plan a strategy",
+          "monkeys": ["Gorilla", "Orangutan"],
+          "points": 3
+        },
+        {
+          "text": "Take immediate action and adapt as needed",
+          "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+          "points": 4
+        },
+        {
+          "text": "Seek advice and collaborate with others",
+          "monkeys": ["Capuchin", "Mandrill"],
+          "points": 2
+        },
+        {
+          "text": "Explore different possibilities and experiment",
+          "monkeys": ["Marmoset", "Lemur"],
+          "points": 1
+        }
+      ]
+    },
+    {
+      "question": "What is your preferred way of spending free time?",
+      "answers": [
+        {
+          "text": "Enjoying the tranquility of nature and peaceful activities",
+          "monkeys": ["Orangutan", "Lemur"],
+          "points": 1
+        },
+        {
+          "text": "Engaging in social interactions and exciting adventures",
+          "monkeys": ["Chimpanzee", "Mandrill"],
+          "points": 4
+        },
+        {
+          "text": "Exploring creative pursuits and personal interests",
+          "monkeys": ["Capuchin", "Marmoset"],
+          "points": 2
+        },
+        {
+          "text": "Seeking inner peace and relaxation",
+          "monkeys": ["Gorilla", "Squirrel Monkey"],
+          "points": 3
+        }
+      ]
+    },
+    {
+      "question": "How do you handle stress?",
+      "answers": [
+        {
+          "text": "Find solace in solitude and personal reflection",
+          "monkeys": ["Orangutan", "Lemur"],
+          "points": 2
+        },
+        {
+          "text": "Seek support from loved ones and engage in calming activities",
+          "monkeys": ["Capuchin", "Mandrill"],
+          "points": 1
+        },
+        {
+          "text": "Maintain a positive attitude and adaptability",
+          "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+          "points": 4
+        },
+        {
+          "text": "Focus on logical analysis and strategizing",
+          "monkeys": ["Gorilla", "Marmoset"],
+          "points": 3
+        }
+      ]
+    },
+    {
+      "question": "Which description resonates with you the most?",
+      "answers": [
+        {
+          "text": "Wise and thoughtful, valuing introspection",
+          "monkeys": ["Orangutan", "Lemur"],
+          "points": 1
+        },
+        {
+          "text": "Energetic and adventurous, seeking new experiences",
+          "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+          "points": 4
+        },
+        {
+          "text": "Playful and social, enjoying connections with others",
+          "monkeys": ["Mandrill", "Capuchin"],
+          "points": 2
+        },
+        {
+          "text": "Focused and analytical, always seeking efficiency",
+          "monkeys": ["Gorilla", "Marmoset"],
+          "points": 3
+        }
+      ]
+    },
+    {
+      "question": "What's your favourite type of movie?",
+      "answers": [
+        {
+          "text": "Thrillers and action-packed movies that keep me on the edge of my seat",
+          "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+          "points": 4
+        },
+        {
+          "text": "Documentaries and educational movies that make me think",
+          "monkeys": ["Gorilla", "Marmoset"],
+          "points": 3
+        },
+        {
+          "text": "Comedies and lighthearted films that lift my spirits",
+          "monkeys": ["Mandrill", "Capuchin"],
+          "points": 2
+        },
+        {
+          "text": "Dramas and artsy movies that tug at my heartstrings",
+          "monkeys": ["Orangutan", "Lemur"],
+          "points": 1
+        }
+      ]
+    },  
   {
-    "question": "How do you typically respond to challenges?",
+    "question": "What role do you usually take in a team?",
     "answers": [
       {
-        "text": "Analyze the situation and carefully plan a strategy",
-        "monkeys": ["Gorilla", "Orangutan"],
-        "points": 3
+        "text": "The thinker who provides new perspectives and ideas",
+        "monkeys": ["Orangutan", "Lemur"],
+        "points": 2
       },
       {
-        "text": "Take immediate action and adapt as needed",
-        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+        "text": "The leader who takes charge and makes decisions",
+        "monkeys": ["Gorilla", "Marmoset"],
         "points": 4
       },
       {
-        "text": "Seek advice and collaborate with others",
+        "text": "The supporter who provides help and encouragement",
+        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
+        "points": 3
+      },
+      {
+        "text": "The communicator who facilitates understanding and harmony",
         "monkeys": ["Capuchin", "Mandrill"],
-        "points": 2
-      },
-      {
-        "text": "Explore different possibilities and experiment",
-        "monkeys": ["Marmoset", "Lemur"],
         "points": 1
       }
     ]
   },
   {
-    "question": "What is your preferred way of spending free time?",
+    "question": "What is your approach to problem-solving?",
     "answers": [
       {
-        "text": "Enjoying the tranquility of nature and peaceful activities",
-        "monkeys": ["Orangutan", "Lemur"],
-        "points": 1
+        "text": "I consider all potential outcomes and try to make the best decision",
+        "monkeys": ["Gorilla", "Marmoset"],
+        "points": 3
       },
       {
-        "text": "Engaging in social interactions and exciting adventures",
-        "monkeys": ["Chimpanzee", "Mandrill"],
+        "text": "I act on instinct and then adapt my approach as needed",
+        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
         "points": 4
       },
       {
-        "text": "Exploring creative pursuits and personal interests",
-        "monkeys": ["Capuchin", "Marmoset"],
-        "points": 2
-      },
-      {
-        "text": "Seeking inner peace and relaxation",
-        "monkeys": ["Gorilla", "Squirrel Monkey"],
-        "points": 3
-      }
-    ]
-  },
-  {
-    "question": "How do you handle stress?",
-    "answers": [
-      {
-        "text": "Find solace in solitude and personal reflection",
-        "monkeys": ["Orangutan", "Lemur"],
-        "points": 2
-      },
-      {
-        "text": "Seek support from loved ones and engage in calming activities",
+        "text": "I seek advice and try to find a consensus before acting",
         "monkeys": ["Capuchin", "Mandrill"],
         "points": 1
       },
       {
-        "text": "Maintain a positive attitude and adaptability",
+        "text": "I take a creative approach and try out different solutions",
+        "monkeys": ["Orangutan", "Lemur"],
+        "points": 2
+      }
+    ]
+  },
+  {
+    "question": "How do you perceive yourself?",
+    "answers": [
+      {
+        "text": "As an innovator and a risk-taker",
         "monkeys": ["Chimpanzee", "Squirrel Monkey"],
         "points": 4
       },
       {
-        "text": "Focus on logical analysis and strategizing",
+        "text": "As a mediator and a peacemaker",
+        "monkeys": ["Capuchin", "Mandrill"],
+        "points": 1
+      },
+      {
+        "text": "As a thinker and a problem-solver",
         "monkeys": ["Gorilla", "Marmoset"],
+        "points": 3
+      },
+      {
+        "text": "As an observer and a learner",
+        "monkeys": ["Orangutan", "Lemur"],
+        "points": 2
+      }
+    ]
+  },
+  {
+    "question": "What motivates you the most?",
+    "answers": [
+      {
+        "text": "Achieving personal goals and self-improvement",
+        "monkeys": ["Gorilla", "Marmoset"],
+        "points": 4
+      },
+      {
+        "text": "Building relationships and fostering a sense of community",
+        "monkeys": ["Capuchin", "Mandrill"],
+        "points": 1
+      },
+      {
+        "text": "Exploring new ideas and experiences",
+        "monkeys": ["Orangutan", "Lemur"],
+        "points": 2
+      },
+      {
+        "text": "Overcoming challenges and proving my abilities",
+        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
         "points": 3
       }
     ]
   },
   {
-    "question": "Which description resonates with you the most?",
+    "question": "Which phrase best describes how you handle stress?",
     "answers": [
       {
-        "text": "Wise and thoughtful, valuing introspection",
-        "monkeys": ["Orangutan", "Lemur"],
+        "text": "I take time to relax and engage in activities that I enjoy",
+        "monkeys": ["Capuchin", "Mandrill"],
         "points": 1
       },
       {
-        "text": "Energetic and adventurous, seeking new experiences",
-        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-        "points": 4
-      },
-      {
-        "text": "Playful and social, enjoying connections with others",
-        "monkeys": ["Mandrill", "Capuchin"],
-        "points": 2
-      },
-      {
-        "text": "Focused and analytical, always seeking efficiency",
-        "monkeys": ["Gorilla", "Marmoset"],
-        "points": 3
-      }
-    ]
-  },
-  {
-    "question": "What's your favourite type of movie?",
-    "answers": [
-      {
-        "text": "Thrillers and action-packed movies that keep me on the edge of my seat",
-        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-        "points": 4
-      },
-      {
-        "text": "Documentaries and educational movies that make me think",
+        "text": "I work through it by focusing on tasks and responsibilities",
         "monkeys": ["Gorilla", "Marmoset"],
         "points": 3
       },
       {
-        "text": "Comedies and lighthearted films that lift my spirits",
-        "monkeys": ["Mandrill", "Capuchin"],
+        "text": "I talk it out with friends or loved ones",
+        "monkeys": ["Chimpanzee", "Squirrel Monkey"],
         "points": 2
       },
       {
-        "text": "Dramas and artsy movies that tug at my heartstrings",
+        "text": "I use stress as a motivator to complete my tasks",
         "monkeys": ["Orangutan", "Lemur"],
-        "points": 1
+        "points": 4
       }
     ]
-  },  
-{
-  "question": "What role do you usually take in a team?",
-  "answers": [
-    {
-      "text": "The thinker who provides new perspectives and ideas",
-      "monkeys": ["Orangutan", "Lemur"],
-      "points": 2
-    },
-    {
-      "text": "The leader who takes charge and makes decisions",
-      "monkeys": ["Gorilla", "Marmoset"],
-      "points": 4
-    },
-    {
-      "text": "The supporter who provides help and encouragement",
-      "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-      "points": 3
-    },
-    {
-      "text": "The communicator who facilitates understanding and harmony",
-      "monkeys": ["Capuchin", "Mandrill"],
-      "points": 1
-    }
-  ]
-},
-{
-  "question": "What is your approach to problem-solving?",
-  "answers": [
-    {
-      "text": "I consider all potential outcomes and try to make the best decision",
-      "monkeys": ["Gorilla", "Marmoset"],
-      "points": 3
-    },
-    {
-      "text": "I act on instinct and then adapt my approach as needed",
-      "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-      "points": 4
-    },
-    {
-      "text": "I seek advice and try to find a consensus before acting",
-      "monkeys": ["Capuchin", "Mandrill"],
-      "points": 1
-    },
-    {
-      "text": "I take a creative approach and try out different solutions",
-      "monkeys": ["Orangutan", "Lemur"],
-      "points": 2
-    }
-  ]
-},
-{
-  "question": "How do you perceive yourself?",
-  "answers": [
-    {
-      "text": "As an innovator and a risk-taker",
-      "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-      "points": 4
-    },
-    {
-      "text": "As a mediator and a peacemaker",
-      "monkeys": ["Capuchin", "Mandrill"],
-      "points": 1
-    },
-    {
-      "text": "As a thinker and a problem-solver",
-      "monkeys": ["Gorilla", "Marmoset"],
-      "points": 3
-    },
-    {
-      "text": "As an observer and a learner",
-      "monkeys": ["Orangutan", "Lemur"],
-      "points": 2
-    }
-  ]
-},
-{
-  "question": "What motivates you the most?",
-  "answers": [
-    {
-      "text": "Achieving personal goals and self-improvement",
-      "monkeys": ["Gorilla", "Marmoset"],
-      "points": 4
-    },
-    {
-      "text": "Building relationships and fostering a sense of community",
-      "monkeys": ["Capuchin", "Mandrill"],
-      "points": 1
-    },
-    {
-      "text": "Exploring new ideas and experiences",
-      "monkeys": ["Orangutan", "Lemur"],
-      "points": 2
-    },
-    {
-      "text": "Overcoming challenges and proving my abilities",
-      "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-      "points": 3
-    }
-  ]
-},
-{
-  "question": "Which phrase best describes how you handle stress?",
-  "answers": [
-    {
-      "text": "I take time to relax and engage in activities that I enjoy",
-      "monkeys": ["Capuchin", "Mandrill"],
-      "points": 1
-    },
-    {
-      "text": "I work through it by focusing on tasks and responsibilities",
-      "monkeys": ["Gorilla", "Marmoset"],
-      "points": 3
-    },
-    {
-      "text": "I talk it out with friends or loved ones",
-      "monkeys": ["Chimpanzee", "Squirrel Monkey"],
-      "points": 2
-    },
-    {
-      "text": "I use stress as a motivator to complete my tasks",
-      "monkeys": ["Orangutan", "Lemur"],
-      "points": 4
-    }
-  ]
-}
+  }
 ]
 
 

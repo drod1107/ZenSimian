@@ -47,6 +47,9 @@ function calculateResult(ansArr) {
   return selectedMonkey;
 }
 
+// The rest of the code remains unchanged...
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // add an eventListener to handle the "button" click for signup redirect
   document.getElementById('signUp').onclick = function() {
@@ -93,3 +96,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Clear the stored ansArr to prevent it from interfering with future quizzes
   localStorage.removeItem("ansArr");
 });
+

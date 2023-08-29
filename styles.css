@@ -7,12 +7,12 @@
 
 :root {
   /* custom color palette */
-  --primary-base: #2f4f4f;
-  --secondary-base: #556b2f;
-  --trinary-base: #36454f;
-  --primary-comp: #8f9779;
-  --secondary-comp: #8b3e35;
-  --trinary-comp: #4682b4;
+  --primary-base: #162D34;
+  --secondary-base: #D4C8AD;
+  --trinary-base: #849496;
+  --primary-comp: #A7A77D;
+  --secondary-comp: #C2B280;
+  --trinary-comp: #2F4F2F;
 }
 
 
@@ -39,7 +39,7 @@ p,
 ol,
 ul {
   list-style-type: none;
-  color: var(--secondary-base);
+  color: var(--trinary-comp);
   background: rgba(255, 255, 255, 0.2); /* semitransparent white background */
   padding: 5px; /* add some padding for spacing */
 }

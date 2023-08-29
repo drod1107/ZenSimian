@@ -66,7 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let resultHtml = `
           <h2>${text}</h2>
           <p>${description}</p>
-          <div class="fb-share-button" data-href="https://zensimian.netlify.app/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fzensimian.netlify.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+          <div class="button" id="fbShare">
+            <a href="https://www.facebook.com/dialog/share?app_id=252033714306810display=popup&href=https%3A%2F%2Fzensimian.netlify.app&redirect_uri=https%3A%2F%2Fzensimian.netlify.app%2Findex.html"target="_blank">
+              Share on Facebook
+            </a>
+          </div>
+
+
         `;
 
         if (imageUrl && imageUrl.trim() !== "") {

@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h2>${text}</h2>
           <p>${description}</p>
           <div class="button" id="fbShare">
-            <a href="https://www.facebook.com/dialog/share?app_id=252033714306810display=popup&href=https%3A%2F%2Fzensimian.netlify.app&redirect_uri=https%3A%2F%2Fzensimian.netlify.app%2Findex.html"target="_blank">
+            <a href="https://www.facebook.com/dialog/share?app_id=252033714306810display=popup&href=http%3A%2F%2Fzensimian.com&redirect_uri=http%3A%2F%2Fzensimian.com%2Findex.html"target="_blank">
               Share on Facebook
             </a>
           </div>

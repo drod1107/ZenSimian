@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
 
+          
         `;
 
         if (imageUrl && imageUrl.trim() !== "") {

@@ -17,14 +17,15 @@
 
 
 body {
-  font-family: "Playfair Display", "Lato", serif;
+  font-family: 'Oswald', sans-serif;
   background-color: var(--primary-comp);
-  color: var(--primary-comp);
+  color: var(--trinary-comp);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* box-sizing: border-box; */
+  text-align: center;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -35,6 +36,7 @@ img {
 
 h1,
 h2,
+h3,
 p,
 ol,
 ul {
@@ -42,19 +44,25 @@ ul {
   color: var(--trinary-comp);
   background: rgba(255, 255, 255, 0.2); /* semitransparent white background */
   padding: 5px; /* add some padding for spacing */
+  border-radius: 5px;
+  padding: 10% 10% 10% 10%;
+
 }
 
 header, main, footer {
   width: 100%;
-  max-width: 800px; /* Adjust the value to your desired width */
+  max-width: 800px; 
   margin: 0 auto; /* Center the sections horizontally */
   padding: 20px; /* Add padding for spacing */
   /* max-height: 100vh; */
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+
 }
 
 .container {
   color: var(--secondary-comp);
+  border-radius: 5px;
 }
 
 .glassDiv {
@@ -76,6 +84,8 @@ header, main, footer {
   margin-bottom: 20px;
   width: 100%;
   max-width: 80%;
+  border-radius: 5px;
+
 }
 
 .carousel {
@@ -83,6 +93,7 @@ header, main, footer {
   height: 300px;
   overflow: hidden;
   margin: 10px;
+  scroll-snap-type: x mandatory; /* Add this line */
 }
 
 .carousel__slide {
@@ -94,7 +105,8 @@ header, main, footer {
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-  transition: opacity 4s;
+  transition: opacity 4s ease-in-out; 
+  scroll-snap-align: start; 
 }
 
 .centered {
@@ -103,8 +115,37 @@ header, main, footer {
 
 .button {
   cursor: pointer;
+  background: #2F4F2F;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  transition: all 0.3s;
+}
+
+.fb-share-button {
+  width: 250px;
+  height: auto;
+}
+
+h3 {
+  max-width: 65%;
+
+}
+
+#startQuiz {
+  text-align: center;
+  font-size: larger;
+}
+
+li {
+  text-align: left;
   padding: 10px;
-  color: white;
-  background-color:
-  blue; text-align: center;
+}
+
+#nextQuestion {
+  width: 100%;
+  height: 50px;
 }
